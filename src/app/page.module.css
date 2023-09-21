@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 3rem 6rem;
   min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@
   font-family: var(--font-mono);
 }
 
-.description a {
+.description .btn_buy{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,20 +32,90 @@
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+  font-weight: 800;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.price {
+  font-size: small;
+  text-decoration: line-through;
+}
+
+.buy_now{
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: var(--border-radius);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: 400px 1fr;
   max-width: 100%;
   width: var(--max-width);
+  border: 1px solid rgb(137, 138, 138);
+
 }
 
+.card_buy {
+  padding: 30px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.info_buy {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.on_sale {
+  color: red;
+  border-radius: var(--border-radius);
+  background-color: rgb(244,217,221);
+  padding: 5px;
+}
+
+.description_buy {
+  display: flex;
+}
+
+.line_divide {
+  width: 80%;
+  margin: auto;
+  color: var(--callout-border-rgb);
+}
+
+.blogging {
+  border-left: 1px solid rgb(137, 138, 138);
+}
+
+.entraces {
+  padding: 30px;
+}
+
+.author_detail {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 20px;
+  gap: 10px;
+}
+
+.img_profile {
+  object-fit: contain;
+  border-radius: 500%;
+}
+
+.content {
+  margin-top: 15px;
+}
+
+.footer { 
+  margin-top: 3rem;
+}
+
+/*
 .card {
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
@@ -70,7 +140,7 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
-}
+}*/
 
 .center {
   display: flex;
@@ -138,6 +208,8 @@
     text-align: center;
   }
 
+
+/*
   .card {
     padding: 1rem 2.5rem;
   }
@@ -145,7 +217,7 @@
   .card h2 {
     margin-bottom: 0.5rem;
   }
-
+*/
   .center {
     padding: 8rem 0 6rem;
   }
@@ -159,7 +231,7 @@
     font-size: 0.8rem;
   }
 
-  .description a {
+  .description .btn_buy {
     padding: 1rem;
   }
 
@@ -208,16 +280,12 @@
     grid-template-columns: repeat(2, 50%);
   }
 }
-
+/*
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
-}
+}*/
 
 @keyframes rotate {
   from {
