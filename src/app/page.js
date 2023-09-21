@@ -11,7 +11,7 @@ export default function Home() {
         </h2>
         <div>
           <div className={styles.btn_buy}>
-            $15.99<span className={styles.price}>$19.99</span>{' '}
+            <h3>$15.99</h3> <span className={styles.price}>$19.99</span>
             <Link
               href="/"
               className={styles.buy_now}
