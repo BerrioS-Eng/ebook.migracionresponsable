@@ -13,7 +13,7 @@ export default function Home() {
           <div className={styles.btn_buy}>
             <h3>$15.99</h3> <span className={styles.price}>$19.99</span>
             <Link
-              href="/"
+              href="https://buy.stripe.com/aEUdR11XkapQaty9AL"
               className={styles.buy_now}
             >Consiguelo Ahora</Link>
           </div>
@@ -43,7 +43,7 @@ export default function Home() {
               </div>
             </div>
             <Link
-              href='/'
+              href='https://buy.stripe.com/aEUdR11XkapQaty9AL'
               className={styles.buy_now}
             >¡Consiguelo Ahora!
             </Link>
