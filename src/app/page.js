@@ -9,7 +9,7 @@ export default function Home() {
         <h2>
           Guía paso a paso para emigrar a España
         </h2>
-        <div>
+        <div className={styles.btn_section}>
           <div className={styles.btn_buy}>
             <h3>$15.99</h3> <span className={styles.price}>$19.99</span>
             <Link
@@ -24,7 +24,7 @@ export default function Home() {
         <Image
           className={styles.logo}
           src="/ebook-without-bg.png"
-          alt="Next.js Logo"
+          alt="Ebook Migración responsable"
           width={280}
           height={320}
           priority

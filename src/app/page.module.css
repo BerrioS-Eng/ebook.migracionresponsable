@@ -25,16 +25,6 @@
   gap: 0.5rem;
 }
 
-/*
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
-  font-weight: 800;
-}*/
 
 .price {
   font-size: small;
@@ -190,14 +180,12 @@
 
   .description div {
     align-items: flex-end;
-    pointer-events: none;
     inset: auto 0 0;
     padding: 2rem;
     height: 200px;
     background: linear-gradient(to bottom,
         transparent 0%,
         rgb(var(--background-end-rgb)) 40%);
-    z-index: 1;
   }
 
   .card_buy {
@@ -217,19 +205,20 @@
   }
 }
 
+/* Enable hover only on non-touch devices 
+@media (hover: hover) and (pointer: fine) {
+  .buy_now:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+}*/
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}*/
 
 @keyframes rotate {
   from {
